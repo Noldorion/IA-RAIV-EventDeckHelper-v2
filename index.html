@@ -14,7 +14,18 @@
     <div id="title" class="d-flex flex-row justify-content-center my-2">
         <h4 class="animated zoomIn">Imperial Assault RAIVER - Event Deck Helper</h2>
     </div>
-
+    <div class="d-flex justify-content-around align-items-center">
+        <div class="d-flex">
+            <button type="button" class="btn btn-dark btn-block btn-m m-1" id="manual"
+                onclick="window.open('https://drive.google.com/file/d/1F1ydf984dHRnGsVqZpfl_UrnMNbsTOv6/view?usp=sharing',
+                 '_blank')">View Manual</button>
+        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-dark btn-block btn-m m-1" id="rules"
+                onclick="window.open('https://drive.google.com/file/d/102oP6Fledpu_SeAcpeOO8OaRpJXltnl2/view?usp=sharing', 
+                '_blank')">View Rules</button>
+        </div>
+    </div>
     <div class="d-flex flex-row justify-content-around m-2 p-2 flex-wrap boarder align-items-center">
         <h5>Event Deck Setup</h5>
         <div class="dropdown show m-2">
@@ -47,7 +58,7 @@
                 onclick="addRebelAidCard()" disabled>Add a Rebel Aid card</button></div>
 
         <div class="d-flex flex-fill m-1"><button type="button" class="btn btn-dark btn-block btn-m" id="addAgendaBtn"
-                onclick="addAgendaCard()" disabled>Add an Imperial Agenda card</button></div>
+                onclick="addAgendaCard()" disabled>Add an Imperial Offensive card</button></div>
 
         <div class="d-flex flex-filld m-1"><button type="button" class="btn btn-dark btn-block btn-m" id="saveDeckBtn"
                 onclick="saveDeck()" disabled>Save Deck</button></div>
@@ -73,8 +84,8 @@
         <div class="d-flex mx-2">
             <button type="button" class="btn btn-dark btn-block btn-m m-2" id="twoGlobalEventBtn"
                 onclick="toggle2GlobalEvent()" value="disabled"
-                title="To handle Tracking Beacon Agenda Card that add additional Global Event" disabled>Enable 2
-                Standard Global Event</button>
+                title="To handle Tracking Beacon Imperial Offensive Card that add additional Global Event" disabled>Enable 2
+                Standard Global Events</button>
         </div>
 
         <div class="d-flex flex-fill flex-row justify-content-around">
@@ -85,7 +96,7 @@
                     data-toggle="modal" data-target="#eventDeckModal" disabled>View Deck</button>
             </div>
             <div class="d-flex boarder p-1 m-1 align-items-center">
-                <div class="mx-2">Drew Event Deck Size:</div>
+                <div class="mx-2">Drawn Event Deck Size:</div>
                 <div class="mx-2" id="drewEventDeckSize">0</div>
                 <button type="button" class="btn btn-dark mx-2" id="drewEventDeckBtn" onclick="viewDrewEventDeck()"
                     data-toggle="modal" data-target="#eventDeckModal" disabled>View Deck</button>
@@ -110,7 +121,7 @@
 
         <div class="d-flex flex-column flex-fill p-1 mx-2 align-items-center boarder">
             <div class="d-flex flex-row align-items-center">
-                <h6>Rebel Aid/Imperial Agenda Global Event</h6>
+                <h6>Rebel Aid/Imperial Offensive Global Event</h6>
                 <button type="button" class="btn btn-dark btn-m mx-2" id="discardSCardBtn" onclick="discardSCard()"
                     disabled>Discard</button>
             </div>
